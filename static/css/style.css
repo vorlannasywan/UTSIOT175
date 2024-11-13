@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+    color: #585281;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.dashboard-header .date {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.dashboard-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    
+}
+
+/* Left Sidebar for Data Cards */
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+/* Card Styles */
+/* Card Styles */
+.data-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 180px; /* Adjusted size for the chart */
+    height: 260px; /* Adjusted size to be square */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-card h3 {
+    color: #333;
+    font-size: 1em; /* Smaller font size for better fit */
+    margin-bottom: 8px;
+}
+
+.data-card p {
+    font-size: 1.2em; /* Adjusted font size */
+    color: #585281;
+    margin: 0;
+}
+
+/* Canvas styles for the data card to fit the square dimensions */
+.data-card canvas {
+    width: 140px !important; /* Size to fit neatly within card */
+    height: 140px !important; /* Size to fit neatly within card */
+}
+
+
+/* Chart Styles */
+.chart-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
